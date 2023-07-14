@@ -12,19 +12,23 @@
 # Default kinematics: 
 # electron 50 MeV in direction (0.,0.,1.)
 # 1 event with tracking/verbose
-#
+
 /tracking/verbose 0
+#/tracking/verbose 0
 #/run/beamOn 1
 #
 #
 # muon 300 MeV in direction (0.,0.,1.)
 # 3 events
 #
-/gun/particle gamma
-/gun/direction 0 0 1
-/gun/energy 100 MeV
-/run/beamOn 100000
-#
+#/gun/particle gamma
+#/gun/direction 0 0 1
+#/gun/energy 100 MeV
+#/run/beamOn 100000
+
+
+/G4CATS/generator/InputFile ~/opt/EvGen/out/basic/g_100_90_0_in.root
+
 # 20 events
 #
 #/tracking/verbose 0

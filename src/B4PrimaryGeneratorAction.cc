@@ -27,7 +27,9 @@
 /// \file B4PrimaryGeneratorAction.cc
 /// \brief Implementation of the B4PrimaryGeneratorAction class
 
+#include "B4PrimaryGeneratorMessenger.hh"
 #include "B4PrimaryGeneratorAction.hh"
+#include "A2FileGenerator_h1Branch"
 
 #include "G4RunManager.hh"
 #include "G4LogicalVolumeStore.hh"
@@ -52,10 +54,12 @@ B4PrimaryGeneratorAction::B4PrimaryGeneratorAction()
   // default particle kinematic
   //
   auto particleDefinition 
-    = G4ParticleTable::GetParticleTable()->FindParticle("e-");
+    = G4ParticleTable::GetParticleTable()->FindParticle("gamma");
   fParticleGun->SetParticleDefinition(particleDefinition);
   fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0.,1.));
-  fParticleGun->SetParticleEnergy(50.*MeV);
+  fParticleGun->SetParticleEnergy(500.*MeV);
+
+  PrimaryGeneratorMessenger = new B4PrimaryGeneratorMessenger(this);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -63,6 +67,7 @@ B4PrimaryGeneratorAction::B4PrimaryGeneratorAction()
 B4PrimaryGeneratorAction::~B4PrimaryGeneratorAction()
 {
   delete fParticleGun;
+  delete PrimaryGeneratorMessenger;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -75,7 +80,7 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   // on DetectorConstruction class we get world volume 
   // from G4LogicalVolumeStore
   //
-  G4double worldZHalfLength = 0.;//was 0
+/*  G4double worldZHalfLength = 0.;//was 0
   auto worldLV = G4LogicalVolumeStore::GetInstance()->GetVolume("World");
 
   // Check that the world volume has box shape
@@ -85,7 +90,7 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   }
 
   if ( worldBox ) {
-    worldZHalfLength = worldBox->GetZHalfLength();  
+    worldZHalfLength = worldBox->GetZHalfLength();
   }
   else  {
     G4ExceptionDescription msg;
@@ -95,13 +100,27 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
     G4Exception("B4PrimaryGeneratorAction::GeneratePrimaries()",
       "MyCode0002", JustWarning, msg);
   } 
-  
+*/  
   // Set gun position
-  fParticleGun
-    ->SetParticlePosition(G4ThreeVector(4*cm, 0., -worldZHalfLength));//-worldZHalfLength
-
+  //fParticleGun->SetParticlePosition(G4ThreeVector(4*cm, 0., -worldZHalfLength));//-worldZHalfLength
+  fParticleGun->SetParticlePosition(G4ThreeVector(0*cm, 0., 0.));
   fParticleGun->GeneratePrimaryVertex(anEvent);
+
+  //fFileGen->ReadEvent(fNevent)
 }
 
+void B4PrimaryGeneratorAction::SetUpFileInput()
+{
+	TFile* ftest = new TFile(fInFileName);
+	TTree* h1Branch = 0;
+	h1Branch = (TTree*)ftest->Get("h1");
+	fFileGen = new B4FileGenerator_h1Branch(fInFileName);
+	fFileGen->Init();
+}
+
+G4int B4PrimaryGeneratorAction::GetNEvents()
+{
+	fFileGen->GetNEvents();
+}
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 

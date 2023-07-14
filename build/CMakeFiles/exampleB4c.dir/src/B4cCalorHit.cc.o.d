@@ -1,6 +1,7 @@
 CMakeFiles/exampleB4c.dir/src/B4cCalorHit.cc.o: \
- /home/laura/Vincent/G4CATS/src/B4cCalorHit.cc /usr/include/stdc-predef.h \
- /home/laura/Vincent/G4CATS/include/B4cCalorHit.hh \
+ /home/laura/G4CATS_root_input_1/src/B4cCalorHit.cc \
+ /usr/include/stdc-predef.h \
+ /home/laura/G4CATS_root_input_1/include/B4cCalorHit.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4VHit.hh \
  /opt/geant4_v10.5.1/include/Geant4/globals.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4ios.hh \

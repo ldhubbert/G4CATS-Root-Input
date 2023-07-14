@@ -1,8 +1,8 @@
 CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorAction.cc.o: \
- /home/laura/Vincent/G4CATS/src/B4PrimaryGeneratorAction.cc \
+ /home/laura/G4CATS_root_input_1/src/B4PrimaryGeneratorAction.cc \
  /usr/include/stdc-predef.h \
- /home/laura/Vincent/G4CATS/include/B4PrimaryGeneratorAction.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
+ /home/laura/G4CATS_root_input_1/include/B4PrimaryGeneratorMessenger.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4UImessenger.hh \
  /opt/geant4_v10.5.1/include/Geant4/globals.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4ios.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4Types.hh \
@@ -179,9 +179,58 @@ CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorAction.cc.o: \
  /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
+ /opt/geant4_v10.5.1/include/Geant4/G4UIdirectory.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4UIcommand.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4UIparameter.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4UItokenNum.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4ApplicationState.hh \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /opt/geant4_v10.5.1/include/Geant4/G4ThreeVector.hh \
+ /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.h \
+ /opt/geant4_v10.5.1/include/Geant4/CLHEP/Utility/defs.h \
+ /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+ /home/laura/G4CATS_root_input_1/include/B4PrimaryGeneratorAction.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
+ /opt/geant4_v10.5.1/include/Geant4/globals.hh \
+ /opt/root_v6-26-00/include/TString.h /opt/root_v6-26-00/include/Rtypes.h \
+ /opt/root_v6-26-00/include/RtypesCore.h \
+ /opt/root_v6-26-00/include/ROOT/RConfig.hxx \
+ /opt/root_v6-26-00/include/ROOT/../RVersion.h \
+ /opt/root_v6-26-00/include/RConfigure.h \
+ /opt/root_v6-26-00/include/DllImport.h /usr/include/c++/11/cstddef \
+ /opt/root_v6-26-00/include/strtok.h /opt/root_v6-26-00/include/strlcpy.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/bits/getopt_posix.h /usr/include/bits/getopt_core.h \
+ /usr/include/bits/unistd_ext.h /usr/include/linux/close_range.h \
+ /opt/root_v6-26-00/include/snprintf.h /usr/include/c++/11/atomic \
+ /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /opt/root_v6-26-00/include/TGenericClassInfo.h \
+ /opt/root_v6-26-00/include/TSchemaHelper.h \
+ /opt/root_v6-26-00/include/TIsAProxy.h \
+ /opt/root_v6-26-00/include/TVirtualIsAProxy.h \
+ /opt/root_v6-26-00/include/TMathBase.h \
+ /opt/root_v6-26-00/include/ROOT/RStringView.hxx \
+ /usr/include/c++/11/experimental/string_view \
+ /usr/include/c++/11/bits/ranges_base.h \
+ /usr/include/c++/11/experimental/bits/lfts_config.h \
+ /usr/include/c++/11/experimental/bits/string_view.tcc \
+ /opt/root_v6-26-00/include/ROOT/TypeTraits.hxx \
+ /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/shared_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/bits/refwrap.h /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/cstdarg \
  /opt/geant4_v10.5.1/include/Geant4/G4RunManager.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4RunManagerKernel.hh \
- /opt/geant4_v10.5.1/include/Geant4/globals.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4EventManager.hh \
  /opt/geant4_v10.5.1/include/Geant4/evmandefs.hh \
  /opt/geant4_v10.5.1/include/Geant4/trajectoryControl.hh \
@@ -190,17 +239,9 @@ CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorAction.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/G4ClassificationOfNewTrack.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4StackedTrack.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4TrackStack.hh \
- /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc \
  /opt/geant4_v10.5.1/include/Geant4/G4SmartTrackStack.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4Track.hh \
  /opt/geant4_v10.5.1/include/Geant4/trkdefs.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4ThreeVector.hh \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Utility/defs.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.icc \
  /opt/geant4_v10.5.1/include/Geant4/G4LogicalVolume.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4Region.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4GeomSplitter.hh \
@@ -208,19 +249,11 @@ CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorAction.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/G4AutoLock.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4Threading.hh \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
- /usr/include/c++/11/bits/refwrap.h \
  /usr/include/c++/11/bits/this_thread_sleep.h \
- /usr/include/c++/11/condition_variable \
- /usr/include/c++/11/bits/shared_ptr.h \
- /usr/include/c++/11/bits/shared_ptr_base.h \
- /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/ext/concurrence.h /usr/include/c++/11/future \
- /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
- /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/11/condition_variable /usr/include/c++/11/future \
  /usr/include/c++/11/bits/atomic_futex.h \
  /usr/include/c++/11/bits/std_function.h \
  /opt/geant4_v10.5.1/include/Geant4/G4Allocator.hh \
- /usr/include/c++/11/cstddef \
  /opt/geant4_v10.5.1/include/Geant4/G4AllocatorPool.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4Region.icc \
  /opt/geant4_v10.5.1/include/Geant4/G4VPhysicalVolume.hh \
@@ -323,11 +356,6 @@ CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorAction.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Random/Random.h \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Random/Random.icc \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Utility/memory.h \
- /usr/include/c++/11/memory \
- /usr/include/c++/11/bits/stl_raw_storage_iter.h \
- /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
- /usr/include/c++/11/bits/shared_ptr_atomic.h \
- /usr/include/c++/11/backward/auto_ptr.h \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Random/RandBinomial.icc \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Random/RandBreitWigner.h \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Random/RandFlat.h \
@@ -427,11 +455,6 @@ CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorAction.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/G4VSteppingVerbose.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4TrackingMessenger.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4UImessenger.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4UIdirectory.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4UIcommand.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4UIparameter.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4UItokenNum.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4ApplicationState.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4UserTrackingAction.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4Event.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4PrimaryVertex.hh \
