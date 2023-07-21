@@ -1044,7 +1044,36 @@ CMakeFiles/exampleB4c.dir/src/B4FileGenerator.cc.o: /home/laura/G4CATS_root_inpu
   /usr/include/c++/11/bits/unique_lock.h \
   /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /opt/geant4_v10.5.1/include/Geant4/CLHEP/Utility/defs.h \
-  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.icc
+  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /opt/geant4_v10.5.1/include/Geant4/G4ParticleDefinition.hh \
+  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Units/SystemOfUnits.h \
+  /opt/geant4_v10.5.1/include/Geant4/G4PDefManager.hh \
+  /usr/include/c++/11/stdlib.h \
+  /opt/geant4_v10.5.1/include/Geant4/pwdefs.hh \
+  /opt/geant4_v10.5.1/include/Geant4/G4AutoLock.hh \
+  /opt/geant4_v10.5.1/include/Geant4/G4Threading.hh \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/c++/11/condition_variable \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/future \
+  /usr/include/c++/11/atomic \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/atomic_futex.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /opt/geant4_v10.5.1/include/Geant4/G4ParticleDefinition.icc
 
 CMakeFiles/exampleB4c.dir/src/B4FileGeneratorTree.cc.o: /home/laura/G4CATS_root_input_1/src/B4FileGeneratorTree.cc \
   /usr/include/stdc-predef.h \
@@ -1306,6 +1335,11 @@ CMakeFiles/exampleB4c.dir/src/B4FileGeneratorTree.cc.o: /home/laura/G4CATS_root_
   /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /opt/geant4_v10.5.1/include/Geant4/CLHEP/Utility/defs.h \
   /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   /opt/root_v6-26-00/include/TFile.h \
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/bits/atomic_base.h \
@@ -1335,11 +1369,6 @@ CMakeFiles/exampleB4c.dir/src/B4FileGeneratorTree.cc.o: /home/laura/G4CATS_root_
   /opt/root_v6-26-00/include/snprintf.h \
   /opt/root_v6-26-00/include/TGenericClassInfo.h \
   /opt/root_v6-26-00/include/TSchemaHelper.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
   /opt/root_v6-26-00/include/TIsAProxy.h \
   /opt/root_v6-26-00/include/TVirtualIsAProxy.h \
   /opt/root_v6-26-00/include/TStorage.h \
@@ -2107,6 +2136,12 @@ CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorAction.cc.o: /home/laura/G4CATS_
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/cstdarg \
+  /home/laura/G4CATS_root_input_1/include/B4FileGenerator_h1Branch.hh \
+  /opt/root_v6-26-00/include/Rtypes.h \
+  /home/laura/G4CATS_root_input_1/include/B4FileGeneratorTree.hh \
+  /home/laura/G4CATS_root_input_1/include/B4FileGenerator.hh \
+  /opt/geant4_v10.5.1/include/Geant4/G4String.hh \
+  /opt/geant4_v10.5.1/include/Geant4/G4ThreeVector.hh \
   /opt/geant4_v10.5.1/include/Geant4/G4RunManager.hh \
   /opt/geant4_v10.5.1/include/Geant4/G4RunManagerKernel.hh \
   /opt/geant4_v10.5.1/include/Geant4/G4EventManager.hh \
@@ -2365,7 +2400,70 @@ CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorAction.cc.o: /home/laura/G4CATS_
   /opt/geant4_v10.5.1/include/Geant4/G4ParticleTable.hh \
   /opt/geant4_v10.5.1/include/Geant4/G4ParticleDefinition.hh \
   /opt/geant4_v10.5.1/include/Geant4/G4SystemOfUnits.hh \
-  /opt/geant4_v10.5.1/include/Geant4/Randomize.hh
+  /opt/geant4_v10.5.1/include/Geant4/Randomize.hh \
+  /opt/root_v6-26-00/include/TLorentzVector.h \
+  /opt/root_v6-26-00/include/TMath.h \
+  /opt/root_v6-26-00/include/TError.h \
+  /opt/root_v6-26-00/include/DllImport.h \
+  /usr/include/c++/11/functional \
+  /usr/lib/gcc/x86_64-redhat-linux/11/include/float.h \
+  /usr/include/c++/11/math.h \
+  /opt/root_v6-26-00/include/TVector3.h \
+  /opt/root_v6-26-00/include/TVector2.h \
+  /opt/root_v6-26-00/include/TObject.h \
+  /opt/root_v6-26-00/include/TStorage.h \
+  /opt/root_v6-26-00/include/TVersionCheck.h \
+  /opt/root_v6-26-00/include/RVersion.h \
+  /opt/root_v6-26-00/include/TMatrix.h \
+  /opt/root_v6-26-00/include/TMatrixF.h \
+  /opt/root_v6-26-00/include/TMatrixT.h \
+  /opt/root_v6-26-00/include/TMatrixTBase.h \
+  /opt/root_v6-26-00/include/TMatrixFBasefwd.h \
+  /opt/root_v6-26-00/include/TMatrixDBasefwd.h \
+  /opt/root_v6-26-00/include/TVectorFfwd.h \
+  /opt/root_v6-26-00/include/TVectorDfwd.h \
+  /opt/root_v6-26-00/include/TMatrixTUtils.h \
+  /opt/root_v6-26-00/include/TMatrixFfwd.h \
+  /opt/root_v6-26-00/include/TMatrixFUtils.h \
+  /opt/root_v6-26-00/include/TMatrixFUtilsfwd.h \
+  /opt/root_v6-26-00/include/TRotation.h \
+  /opt/root_v6-26-00/include/TFile.h \
+  /opt/root_v6-26-00/include/Compression.h \
+  /opt/root_v6-26-00/include/TDirectoryFile.h \
+  /opt/root_v6-26-00/include/TDirectory.h \
+  /opt/root_v6-26-00/include/TNamed.h \
+  /opt/root_v6-26-00/include/TString.h \
+  /opt/root_v6-26-00/include/TClass.h \
+  /opt/root_v6-26-00/include/TDictionary.h \
+  /opt/root_v6-26-00/include/ESTLType.h \
+  /opt/root_v6-26-00/include/TObjArray.h \
+  /opt/root_v6-26-00/include/TSeqCollection.h \
+  /opt/root_v6-26-00/include/TCollection.h \
+  /opt/root_v6-26-00/include/TIterator.h \
+  /opt/root_v6-26-00/include/TVirtualRWMutex.h \
+  /opt/root_v6-26-00/include/TVirtualMutex.h \
+  /opt/root_v6-26-00/include/ROOT/RRangeCast.hxx \
+  /opt/root_v6-26-00/include/ROOT/RSpan.hxx \
+  /opt/root_v6-26-00/include/ROOT/span.hxx \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/cassert \
+  /usr/include/c++/11/unordered_set \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/unordered_set.h \
+  /opt/root_v6-26-00/include/TUUID.h \
+  /opt/root_v6-26-00/include/TList.h \
+  /opt/root_v6-26-00/include/TBuffer.h \
+  /opt/root_v6-26-00/include/TDataType.h \
+  /opt/root_v6-26-00/include/Bytes.h \
+  /opt/root_v6-26-00/include/Byteswap.h \
+  /opt/root_v6-26-00/include/TDatime.h \
+  /opt/root_v6-26-00/include/TUrl.h \
+  /opt/root_v6-26-00/include/ROOT/RConcurrentHashColl.hxx \
+  /opt/root_v6-26-00/include/ROOT/TRWSpinLock.hxx \
+  /opt/root_v6-26-00/include/ROOT/TSpinMutex.hxx
 
 CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorMessenger.cc.o: /home/laura/G4CATS_root_input_1/src/B4PrimaryGeneratorMessenger.cc \
   /usr/include/stdc-predef.h \
@@ -6111,6 +6209,32 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/geant4_v10.5.1/include/Geant4/G4Voxelizer.hh:
 
+/opt/geant4_v10.5.1/include/Geant4/G4SurfBits.hh:
+
+/opt/geant4_v10.5.1/include/Geant4/G4MultiUnion.hh:
+
+/opt/geant4_v10.5.1/include/Geant4/G4BooleanSolid.icc:
+
+/opt/geant4_v10.5.1/include/Geant4/G4DisplacedSolid.hh:
+
+/opt/geant4_v10.5.1/include/Geant4/G4SubtractionSolid.hh:
+
+/opt/geant4_v10.5.1/include/Geant4/G4Cons.hh:
+
+/opt/geant4_v10.5.1/include/Geant4/G4Tubs.hh:
+
+/opt/geant4_v10.5.1/include/Geant4/G4LPhysicsFreeVector.hh:
+
+/opt/geant4_v10.5.1/include/Geant4/G4ICRU90StoppingData.hh:
+
+/opt/geant4_v10.5.1/include/Geant4/G4NistMaterialBuilder.hh:
+
+/opt/geant4_v10.5.1/include/Geant4/G4NistManager.hh:
+
+/home/laura/G4CATS_root_input_1/src/B4cDetectorConstruction.cc:
+
+/opt/geant4_v10.5.1/include/Geant4/G4SDManager.hh:
+
 /opt/geant4_v10.5.1/include/Geant4/G4PhysicsListHelper.hh:
 
 /usr/include/bits/posix2_lim.h:
@@ -6165,13 +6289,9 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/root_v6-26-00/include/TUUID.h:
 
-/opt/geant4_v10.5.1/include/Geant4/G4NistMaterialBuilder.hh:
-
 /opt/geant4_v10.5.1/include/Geant4/G4VParticleChange.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/G4VProcess.hh:
-
-/opt/geant4_v10.5.1/include/Geant4/G4LPhysicsFreeVector.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/G4ReplicaNavigation.hh:
 
@@ -6194,8 +6314,6 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /opt/geant4_v10.5.1/include/Geant4/G4VMarker.icc:
 
 /opt/geant4_v10.5.1/include/Geant4/G4UserTrackingAction.hh:
-
-/opt/geant4_v10.5.1/include/Geant4/G4SDManager.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/G4VoxelNavigation.hh:
 
@@ -6224,6 +6342,8 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /opt/geant4_v10.5.1/include/Geant4/G4RegularNavigation.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/G4GRSVolume.hh:
+
+/usr/lib/gcc/x86_64-redhat-linux/11/include/float.h:
 
 /opt/geant4_v10.5.1/include/Geant4/CLHEP/Geometry/Vector3D.h:
 
@@ -6349,6 +6469,10 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/root_v6-26-00/include/TAttFill.h:
 
+/opt/geant4_v10.5.1/include/Geant4/G4BooleanSolid.hh:
+
+/usr/include/asm-generic/errno.h:
+
 /usr/include/sys/single_threaded.h:
 
 /opt/geant4_v10.5.1/include/Geant4/evtdefs.hh:
@@ -6399,8 +6523,6 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/geant4_v10.5.1/include/Geant4/G4PhysicsVector.icc:
 
-/opt/geant4_v10.5.1/include/Geant4/G4MultiUnion.hh:
-
 /opt/geant4_v10.5.1/include/Geant4/G4SteppingManager.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/CLHEP/Random/RandBit.icc:
@@ -6416,8 +6538,6 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /opt/geant4_v10.5.1/include/Geant4/CLHEP/Utility/memory.h:
 
 /opt/geant4_v10.5.1/include/Geant4/G4VVisManager.hh:
-
-/home/laura/G4CATS_root_input_1/src/B4cDetectorConstruction.cc:
 
 /opt/geant4_v10.5.1/include/Geant4/G4MaterialPropertiesIndex.hh:
 
@@ -6436,6 +6556,10 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /opt/geant4_v10.5.1/include/Geant4/G4UImessenger.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/G4VTouchable.hh:
+
+/opt/geant4_v10.5.1/include/Geant4/G4Cons.icc:
+
+/opt/geant4_v10.5.1/include/Geant4/CLHEP/Random/RandBinomial.icc:
 
 /opt/geant4_v10.5.1/include/Geant4/G4TrackStatus.hh:
 
@@ -6503,6 +6627,12 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/geant4_v10.5.1/include/Geant4/G4VDigi.hh:
 
+/opt/root_v6-26-00/include/TMatrixTUtils.h:
+
+/opt/geant4_v10.5.1/include/Geant4/G4SDStructure.hh:
+
+/opt/geant4_v10.5.1/include/Geant4/G4RotationMatrix.hh:
+
 /opt/geant4_v10.5.1/include/Geant4/G4KaonPlus.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/geomdefs.hh:
@@ -6558,8 +6688,6 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /opt/geant4_v10.5.1/include/Geant4/G4SmartTrackStack.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/LorentzRotation.h:
-
-/opt/geant4_v10.5.1/include/Geant4/G4ClassificationOfNewTrack.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/G4VRestDiscreteProcess.hh:
 
@@ -6797,10 +6925,6 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/geant4_v10.5.1/include/Geant4/G4HadProjectile.hh:
 
-/opt/root_v6-26-00/include/TVirtualMutex.h:
-
-/opt/geant4_v10.5.1/include/Geant4/G4SubtractionSolid.hh:
-
 /opt/geant4_v10.5.1/include/Geant4/G4AntiOmegacZero.hh:
 
 /usr/include/bits/mathcalls-helper-functions.h:
@@ -6881,6 +7005,10 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/root_v6-26-00/include/ROOT/RSpan.hxx:
 
+/opt/geant4_v10.5.1/include/Geant4/G4NistElementBuilder.hh:
+
+/usr/include/c++/11/ext/string_conversions.h:
+
 /usr/include/c++/11/x86_64-redhat-linux/bits/basic_file.h:
 
 /usr/include/bits/types/struct_FILE.h:
@@ -6907,6 +7035,8 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/geant4_v10.5.1/include/Geant4/CLHEP/Geometry/BasicVector3D.h:
 
+/opt/root_v6-26-00/include/TMatrixDBasefwd.h:
+
 /usr/include/c++/11/x86_64-redhat-linux/bits/os_defines.h:
 
 /opt/geant4_v10.5.1/include/Geant4/G4Exception.hh:
@@ -6921,13 +7051,13 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /usr/include/c++/11/complex:
 
+/opt/root_v6-26-00/include/TMatrixFBasefwd.h:
+
 /usr/include/c++/11/mutex:
 
 /opt/geant4_v10.5.1/include/Geant4/tools/wroot/columns.icc:
 
 /usr/include/bits/struct_mutex.h:
-
-/opt/geant4_v10.5.1/include/Geant4/G4ICRU90StoppingData.hh:
 
 /usr/include/pthread.h:
 
@@ -6954,10 +7084,6 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /opt/geant4_v10.5.1/include/Geant4/G4KaonMinusInelasticProcess.hh:
 
 /usr/include/c++/11/iostream:
-
-/usr/include/c++/11/ext/string_conversions.h:
-
-/opt/geant4_v10.5.1/include/Geant4/G4NistElementBuilder.hh:
 
 /usr/include/c++/11/vector:
 
@@ -6994,6 +7120,8 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /usr/include/c++/11/x86_64-redhat-linux/bits/c++allocator.h:
 
 /usr/include/c++/11/iosfwd:
+
+/opt/root_v6-26-00/include/TMatrixFUtils.h:
 
 /opt/geant4_v10.5.1/include/Geant4/G4ios.hh:
 
@@ -7059,8 +7187,6 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/geant4_v10.5.1/include/Geant4/G4AntiSigmaMinus.hh:
 
-/opt/geant4_v10.5.1/include/Geant4/G4Tubs.hh:
-
 /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.icc:
 
 /opt/geant4_v10.5.1/include/Geant4/G4EnvironmentUtils.hh:
@@ -7075,9 +7201,9 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
-/usr/include/c++/11/bits/basic_string.tcc:
-
 /opt/geant4_v10.5.1/include/Geant4/G4HCtable.hh:
+
+/usr/include/c++/11/bits/basic_string.tcc:
 
 /usr/include/c++/11/bits/algorithmfwd.h:
 
@@ -7122,6 +7248,8 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /usr/include/bits/xopen_lim.h:
 
 /usr/include/c++/11/bits/unique_ptr.h:
+
+/opt/root_v6-26-00/include/TRotation.h:
 
 /usr/include/c++/11/cmath:
 
@@ -7212,6 +7340,8 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /usr/include/bits/fp-fast.h:
 
 /usr/include/sched.h:
+
+/opt/root_v6-26-00/include/TMatrixFfwd.h:
 
 /usr/include/wctype.h:
 
@@ -7423,6 +7553,8 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /usr/include/bits/timex.h:
 
+/usr/include/c++/11/math.h:
+
 /usr/include/c++/11/bits/invoke.h:
 
 /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationZ.icc:
@@ -7474,10 +7606,6 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /opt/geant4_v10.5.1/include/Geant4/G4VAnalysisManager.icc:
 
 /opt/geant4_v10.5.1/include/Geant4/CLHEP/Random/RandGauss.icc:
-
-/opt/geant4_v10.5.1/include/Geant4/G4RotationMatrix.hh:
-
-/opt/geant4_v10.5.1/include/Geant4/G4SDStructure.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/G4ParticleTable.hh:
 
@@ -7539,8 +7667,6 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/geant4_v10.5.1/include/Geant4/G4NeutrinoE.hh:
 
-/opt/geant4_v10.5.1/include/Geant4/G4NistManager.hh:
-
 /opt/geant4_v10.5.1/include/Geant4/G4PionPlus.hh:
 
 /usr/include/c++/11/cstdarg:
@@ -7564,6 +7690,8 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /opt/geant4_v10.5.1/include/Geant4/G4KaonZero.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/G4DMesonPlus.hh:
+
+/opt/root_v6-26-00/include/TMatrixT.h:
 
 /opt/geant4_v10.5.1/include/Geant4/G4AntiDMesonZero.hh:
 
@@ -7681,6 +7809,10 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/geant4_v10.5.1/include/Geant4/G4VMarker.hh:
 
+/opt/geant4_v10.5.1/include/Geant4/G4Tubs.icc:
+
+/opt/geant4_v10.5.1/include/Geant4/G4EmStandardPhysics.hh:
+
 /opt/geant4_v10.5.1/include/Geant4/G4EmParticleList.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/G4AnalysisVerbose.hh:
@@ -7729,8 +7861,6 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/geant4_v10.5.1/include/Geant4/G4HadronicException.hh:
 
-/opt/geant4_v10.5.1/include/Geant4/G4VTrajectoryModel.hh:
-
 /opt/geant4_v10.5.1/include/Geant4/G4HadronicProcess.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/G4ReactionProductVector.hh:
@@ -7748,6 +7878,8 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /opt/geant4_v10.5.1/include/Geant4/G4VCrossSectionDataSet.hh:
 
 /usr/include/c++/11/bits/hashtable.h:
+
+/opt/root_v6-26-00/include/TMatrixF.h:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
 
@@ -7825,10 +7957,6 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/root_v6-26-00/include/ROOT/RStringView.hxx:
 
-/usr/include/asm-generic/errno.h:
-
-/opt/geant4_v10.5.1/include/Geant4/G4BooleanSolid.hh:
-
 /opt/geant4_v10.5.1/include/Geant4/G4VViewer.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/G4ViewParameters.hh:
@@ -7838,6 +7966,10 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /opt/geant4_v10.5.1/include/Geant4/CLHEP/Geometry/Plane3D.h:
 
 /opt/geant4_v10.5.1/include/Geant4/G4VViewer.icc:
+
+/opt/geant4_v10.5.1/include/Geant4/G4VTrajectoryModel.hh:
+
+/opt/root_v6-26-00/include/TMatrixTBase.h:
 
 /opt/geant4_v10.5.1/include/Geant4/G4THitsMap.hh:
 
@@ -7971,6 +8103,8 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/root_v6-26-00/include/TStorage.h:
 
+/opt/root_v6-26-00/include/TError.h:
+
 /opt/geant4_v10.5.1/include/Geant4/CLHEP/Random/RandPoissonQ.h:
 
 /opt/root_v6-26-00/include/TString.h:
@@ -8073,6 +8207,26 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/geant4_v10.5.1/include/Geant4/G4Box.icc:
 
+/opt/root_v6-26-00/include/TVirtualMutex.h:
+
+/opt/root_v6-26-00/include/TLorentzVector.h:
+
+/opt/geant4_v10.5.1/include/Geant4/G4ClassificationOfNewTrack.hh:
+
+/opt/root_v6-26-00/include/TVector3.h:
+
+/opt/root_v6-26-00/include/TVector2.h:
+
+/opt/root_v6-26-00/include/TVectorFfwd.h:
+
+/opt/geant4_v10.5.1/include/Geant4/tools/rroot/seek:
+
+/opt/root_v6-26-00/include/TVectorDfwd.h:
+
+/opt/root_v6-26-00/include/TMatrixFUtilsfwd.h:
+
+/opt/root_v6-26-00/include/TMatrix.h:
+
 /usr/include/libintl.h:
 
 /home/laura/G4CATS_root_input_1/src/B4PrimaryGeneratorMessenger.cc:
@@ -8119,6 +8273,10 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /opt/geant4_v10.5.1/include/Geant4/tools/wroot/tree:
 
+/opt/geant4_v10.5.1/include/Geant4/G4Pow.hh:
+
+/opt/geant4_v10.5.1/include/Geant4/tools/typedefs:
+
 /opt/geant4_v10.5.1/include/Geant4/tools/wroot/iobject:
 
 /opt/geant4_v10.5.1/include/Geant4/tools/wroot/idir:
@@ -8128,6 +8286,8 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /opt/geant4_v10.5.1/include/Geant4/G4VDiscreteProcess.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/tools/stype:
+
+/opt/root_v6-26-00/include/TMath.h:
 
 /opt/geant4_v10.5.1/include/Geant4/tools/wroot/branch:
 
@@ -8182,8 +8342,6 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /opt/geant4_v10.5.1/include/Geant4/tools/rroot/named:
 
 /opt/geant4_v10.5.1/include/Geant4/tools/rroot/cids:
-
-/opt/geant4_v10.5.1/include/Geant4/tools/rroot/seek:
 
 /opt/geant4_v10.5.1/include/Geant4/G4PhysicsTable.hh:
 
@@ -8261,8 +8419,6 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 
 /usr/include/bits/fcntl-linux.h:
 
-/opt/geant4_v10.5.1/include/Geant4/G4SurfBits.hh:
-
 /usr/include/bits/types/struct_iovec.h:
 
 /usr/include/linux/falloc.h:
@@ -8328,21 +8484,3 @@ CMakeFiles/exampleB4c.dir/src/G4CATS.cc.o: /home/laura/G4CATS_root_input_1/src/G
 /opt/geant4_v10.5.1/include/Geant4/G4VSensitiveDetector.hh:
 
 /opt/geant4_v10.5.1/include/Geant4/G4CollectionNameVector.hh:
-
-/opt/geant4_v10.5.1/include/Geant4/tools/typedefs:
-
-/opt/geant4_v10.5.1/include/Geant4/G4Pow.hh:
-
-/opt/geant4_v10.5.1/include/Geant4/G4EmStandardPhysics.hh:
-
-/opt/geant4_v10.5.1/include/Geant4/G4Tubs.icc:
-
-/opt/geant4_v10.5.1/include/Geant4/G4Cons.hh:
-
-/opt/geant4_v10.5.1/include/Geant4/CLHEP/Random/RandBinomial.icc:
-
-/opt/geant4_v10.5.1/include/Geant4/G4Cons.icc:
-
-/opt/geant4_v10.5.1/include/Geant4/G4DisplacedSolid.hh:
-
-/opt/geant4_v10.5.1/include/Geant4/G4BooleanSolid.icc:

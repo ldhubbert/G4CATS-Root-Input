@@ -229,6 +229,12 @@ CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorAction.cc.o: \
  /usr/include/c++/11/bits/refwrap.h /usr/include/c++/11/ext/concurrence.h \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/cstdarg \
+ /home/laura/G4CATS_root_input_1/include/B4FileGenerator_h1Branch.hh \
+ /opt/root_v6-26-00/include/Rtypes.h \
+ /home/laura/G4CATS_root_input_1/include/B4FileGeneratorTree.hh \
+ /home/laura/G4CATS_root_input_1/include/B4FileGenerator.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4String.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4ThreeVector.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4RunManager.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4RunManagerKernel.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4EventManager.hh \
@@ -484,4 +490,57 @@ CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorAction.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/G4ParticleTable.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4ParticleDefinition.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4SystemOfUnits.hh \
- /opt/geant4_v10.5.1/include/Geant4/Randomize.hh
+ /opt/geant4_v10.5.1/include/Geant4/Randomize.hh \
+ /opt/root_v6-26-00/include/TLorentzVector.h \
+ /opt/root_v6-26-00/include/TMath.h /opt/root_v6-26-00/include/TError.h \
+ /opt/root_v6-26-00/include/DllImport.h /usr/include/c++/11/functional \
+ /usr/lib/gcc/x86_64-redhat-linux/11/include/float.h \
+ /usr/include/c++/11/math.h /opt/root_v6-26-00/include/TVector3.h \
+ /opt/root_v6-26-00/include/TVector2.h \
+ /opt/root_v6-26-00/include/TObject.h \
+ /opt/root_v6-26-00/include/TStorage.h \
+ /opt/root_v6-26-00/include/TVersionCheck.h \
+ /opt/root_v6-26-00/include/RVersion.h \
+ /opt/root_v6-26-00/include/TMatrix.h \
+ /opt/root_v6-26-00/include/TMatrixF.h \
+ /opt/root_v6-26-00/include/TMatrixT.h \
+ /opt/root_v6-26-00/include/TMatrixTBase.h \
+ /opt/root_v6-26-00/include/TMatrixFBasefwd.h \
+ /opt/root_v6-26-00/include/TMatrixDBasefwd.h \
+ /opt/root_v6-26-00/include/TVectorFfwd.h \
+ /opt/root_v6-26-00/include/TVectorDfwd.h \
+ /opt/root_v6-26-00/include/TMatrixTUtils.h \
+ /opt/root_v6-26-00/include/TMatrixFfwd.h \
+ /opt/root_v6-26-00/include/TMatrixFUtils.h \
+ /opt/root_v6-26-00/include/TMatrixFUtilsfwd.h \
+ /opt/root_v6-26-00/include/TRotation.h \
+ /opt/root_v6-26-00/include/TFile.h \
+ /opt/root_v6-26-00/include/Compression.h \
+ /opt/root_v6-26-00/include/TDirectoryFile.h \
+ /opt/root_v6-26-00/include/TDirectory.h \
+ /opt/root_v6-26-00/include/TNamed.h /opt/root_v6-26-00/include/TString.h \
+ /opt/root_v6-26-00/include/TClass.h \
+ /opt/root_v6-26-00/include/TDictionary.h \
+ /opt/root_v6-26-00/include/ESTLType.h \
+ /opt/root_v6-26-00/include/TObjArray.h \
+ /opt/root_v6-26-00/include/TSeqCollection.h \
+ /opt/root_v6-26-00/include/TCollection.h \
+ /opt/root_v6-26-00/include/TIterator.h \
+ /opt/root_v6-26-00/include/TVirtualRWMutex.h \
+ /opt/root_v6-26-00/include/TVirtualMutex.h \
+ /opt/root_v6-26-00/include/ROOT/RRangeCast.hxx \
+ /opt/root_v6-26-00/include/ROOT/RSpan.hxx \
+ /opt/root_v6-26-00/include/ROOT/span.hxx /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h /usr/include/c++/11/cassert \
+ /usr/include/c++/11/unordered_set /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/unordered_set.h \
+ /opt/root_v6-26-00/include/TUUID.h /opt/root_v6-26-00/include/TList.h \
+ /opt/root_v6-26-00/include/TBuffer.h \
+ /opt/root_v6-26-00/include/TDataType.h \
+ /opt/root_v6-26-00/include/Bytes.h /opt/root_v6-26-00/include/Byteswap.h \
+ /opt/root_v6-26-00/include/TDatime.h /opt/root_v6-26-00/include/TUrl.h \
+ /opt/root_v6-26-00/include/ROOT/RConcurrentHashColl.hxx \
+ /opt/root_v6-26-00/include/ROOT/TRWSpinLock.hxx \
+ /opt/root_v6-26-00/include/ROOT/TSpinMutex.hxx

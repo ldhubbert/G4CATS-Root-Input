@@ -29,7 +29,7 @@
 
 #include "B4PrimaryGeneratorMessenger.hh"
 #include "B4PrimaryGeneratorAction.hh"
-#include "A2FileGenerator_h1Branch"
+#include "B4FileGenerator_h1Branch.hh"
 
 #include "G4RunManager.hh"
 #include "G4LogicalVolumeStore.hh"
@@ -42,7 +42,11 @@
 #include "G4SystemOfUnits.hh"
 #include "Randomize.hh"
 
+#include "TLorentzVector.h"
+#include "TFile.h"
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+using namespace CLHEP;
 
 B4PrimaryGeneratorAction::B4PrimaryGeneratorAction()
  : G4VUserPrimaryGeneratorAction(),
@@ -59,15 +63,20 @@ B4PrimaryGeneratorAction::B4PrimaryGeneratorAction()
   fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0.,1.));
   fParticleGun->SetParticleEnergy(500.*MeV);
 
-  PrimaryGeneratorMessenger = new B4PrimaryGeneratorMessenger(this);
+  fGunMessenger = new B4PrimaryGeneratorMessenger(this);
+  fFileGen = 0;
+  fNevent=0;
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 B4PrimaryGeneratorAction::~B4PrimaryGeneratorAction()
 {
+  if (fFileGen)
+	  delete fFileGen;
   delete fParticleGun;
-  delete PrimaryGeneratorMessenger;
+  delete fGunMessenger;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -106,7 +115,53 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   fParticleGun->SetParticlePosition(G4ThreeVector(0*cm, 0., 0.));
   fParticleGun->GeneratePrimaryVertex(anEvent);
 
-  //fFileGen->ReadEvent(fNevent)
+  fFileGen->ReadEvent(fNevent);
+
+  for (G4int i = 0; i < fFileGen->GetNParticles(); i++)
+  {
+  	TString fmt = TString::Format("Particle %2d : ", i+1);
+	if (fFileGen->GetParticleDefinition(i))
+	{
+  		fmt += TString::Format("%-12s PDG ID: %d", fFileGen->GetParticleDefinition(i)->GetParticleName().c_str(), fFileGen->GetParticleDefinition(i)->GetPDGEncoding());
+	}
+  }
+  
+  if (fNToBeTracked
+
+  }
+
+  fGenPosition[0] = fFileGen->GetVertex().x()/cm;
+  fGenPosition[1] = fFileGen->GetVertex().y()/cm;
+  fGenPosition[2] = fFileGen->GetVertex().z()/cm;
+
+  const B4FileGenerator::B4GenParticle_t& beam = fFileGen->GetBeam();
+  if (fBeamEnergy != 0)
+	  fBeamLorentzVec->SetPxPyPzE(0, 0, fBeamEnergy, fBeamEnergy);
+  else
+	  fBeamLorentzVec->SetPxPyPzE(beam.fP.x(), beam.fP.y(), beam.fP.z(), beam.fE);
+
+  fNGenParticles = fFileGen->GetNParticles();
+  for (G4int i = 0; i < fFileGen->GetNParticles(); i++)
+  {
+  	const G4ThreeVector& mom = fFileGen->GetParticleMomentum(i);
+	fGenLorentzVec[i]->SetPxPyPzE(mom.x(), mom.y(), mom.z(), fFileGen->GetParticleEnergy(i));
+	fGenPartType[i] = fFileGen->GetparticleDefinition(i) ?
+		PDGtoG3(fFileGen->GetParticleDefinition(i)->GetPDGEncoding()) : 0;
+  }
+
+  for (G4int i = 0, i < fFileGen->GetNParticles(); i++)
+  {
+  	if (fFileGen->IsParticleTrack(i))
+	{
+  		fParticleGun->SetParticleDefinition(fFileGen->GetParticleDefinition(i));
+		fParticleGun->SetParticleMomentumDirection(fFileGen->GetParticleDefinition(i));
+		fParticleGun->SetParticleEnergy(fFileGen->GetParticleKineticEnergy(i));
+		fParticleGun->SetParticlePosition(fFileGen->GetParticleVertex(i));
+		fParticleGun->SetParticleTime(fFileGen->GetParticleTime(i));
+		fParticleGun->GeneratePrimaryVertex(anEvent);
+	}
+  }
+  
 }
 
 void B4PrimaryGeneratorAction::SetUpFileInput()
@@ -120,7 +175,8 @@ void B4PrimaryGeneratorAction::SetUpFileInput()
 
 G4int B4PrimaryGeneratorAction::GetNEvents()
 {
-	fFileGen->GetNEvents();
+	if (fFileGen)
+		return fFileGen->GetNEvents();
 }
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 

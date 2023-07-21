@@ -34,9 +34,11 @@
 #include "globals.hh"
 #include "TString.h"
 
+class TLorentzVector;
 class G4ParticleGun;
 class G4Event;
 class B4PrimaryGeneratorMessenger;
+class B4FileGenerator;
 
 /// The primary generator action class with particle gum.
 ///
@@ -59,10 +61,18 @@ public:
   void SetUpFileInput();
   void SetInputFile(TString filename){fInFileName=filename;};
 
+  Float_t* GetVertex(){return fGenPosition;}
+
 private:
   G4ParticleGun*  fParticleGun; // G4 particle gun
   TString fInFileName;
-  B4PrimaryGeneratorMessenger* PrimaryGeneratorMessenger;
+  B4PrimaryGeneratorMessenger* fGunMessenger;
+  B4FileGenerator* fFileGen;
+  Int_t fNevent;
+  Float_t fGenPosition[3];
+
+public:
+  B4FileGenerator* GetFileGen() const { return fFileGen; }
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
